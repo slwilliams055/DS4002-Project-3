@@ -35,8 +35,8 @@ Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated termina
   * Data: Original Data & Final Dataset used for analysis.
     * README.md
     * BFree_Original:
-     * BFree_viral_images.csv:  csv containing the links to the 1111 images in the oroginal dataset
-     * BFree_: folder of images containing a "real" and "fake" folder. 
+      * BFree_viral_images.csv:  csv containing the links to the 1111 images in the oroginal dataset
+      * BFree_: folder of images containing a "real" and "fake" folder. 
     * BFree_images_600.csv: csv corresponding to the preprocessed dataset obtained from BFree. 
     * BFree_images_600: Folder containing the 600 selected images (300 real, 300 fake) from the BFree image dataset. This is the "image data subset." 
   * Scripts:
