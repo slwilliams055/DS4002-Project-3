@@ -31,7 +31,6 @@ Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated termina
 
 ## Map of Documentation
 * DS Project Repository
-  * README.md
   * Data: Original Data & Final Dataset used for analysis.
     * README.md
     * BFree_Original:
@@ -39,10 +38,10 @@ Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated termina
       * BFree_: folder of images containing a "real" and "fake" folder. 
     * BFree_images_600.csv: csv corresponding to the preprocessed dataset obtained from BFree. 
     * BFree_images_600: Folder containing the 600 selected images (300 real, 300 fake) from the BFree image dataset. This is the "image data subset." 
-  * Scripts:
   * Output:
-  * License
-  * MODEL_OUTPUT:
+  * Scripts:
+  * LICENSE
+  * README.md
   * REFERENCES
 ## Instruction for Reproducing Results
 ### Software and Environment
