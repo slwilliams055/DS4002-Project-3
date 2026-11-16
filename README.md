@@ -48,12 +48,12 @@ Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated termina
 - Python 3.13
 - Visual Studio Code (VS Code)
 - Required Python packages:
- - TensorFlow 2.21.0
- - Keras 3.15.1
- - pandas 3.0.3
- - numpy 2.4.6
- - matplotlib 3.11.2
- - Pillow 13.0.0
- - scikit-learn 1.9.1
- - Seaborn 
+  - tensorflow 2.21.0
+  - Keras 3.15.1
+  - pandas 3.0.3
+  - numpy 2.4.6
+  - matplotlib 3.11.2
+  - Pillow 13.0.0
+  - scikit-learn 1.9.1
+  - Seaborn 
 ### Reproduce Final Results
