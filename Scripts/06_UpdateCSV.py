@@ -1,3 +1,5 @@
+# This script removes unnecessary columns from the final dataset CSV, retaining only the metadata needed for subsequent analysis.
+
 # Import required libraries
 import pandas as pd
 from pathlib import Path
