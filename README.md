@@ -42,12 +42,12 @@ Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated termina
   * Output:
     * README.md
   * Scripts:
-    * script1.py:
-    * script2.py:
-    * script3.py:
-    * script4.py:
-    * script5.py:
-    * script6.py:
+    * 01_ImageDownload.py
+    * 02_RemoveImages.py
+    * 03_Cleaning.py
+    * 04_Selecting600.py
+    * 05_Resizing.py
+    * 06_UpdateCSV.py
   * LICENSE
   * README.md
   * REFERENCES
