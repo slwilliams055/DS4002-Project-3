@@ -1,3 +1,4 @@
+# This script downloads images from the original dataset URLs, converts them to JPEG format, and saves them with filenames indicating their REAL or FAKE labels.
 
 # Import libraries
 import pandas as pd
