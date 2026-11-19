@@ -1,3 +1,5 @@
+# This script removes REAL/FAKE prefixes from image filenames, organizes images into one folder, and checks that the files match their corresponding metadata entries.
+
 # Import required libraries
 import pandas as pd
 from pathlib import Path
