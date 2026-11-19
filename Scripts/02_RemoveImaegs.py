@@ -1,3 +1,4 @@
+# This script removes identified unwanted images from the dataset and deletes their corresponding rows from the metadata CSV.
 # Import required libraries
 import pandas as pd
 from pathlib import Path
