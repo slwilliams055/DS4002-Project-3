@@ -1,3 +1,5 @@
+# This script randomly selects 600 images, aiming for an equal distribution of REAL and FAKE images, and saves the selected images and corresponding metadata.
+
 # Import required libraries
 import shutil
 import pandas as pd
