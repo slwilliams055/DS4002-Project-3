@@ -1,3 +1,5 @@
+# This script resizes all selected images to 224 × 224 pixels and checks their dimensions to ensure consistent image sizes.
+
 # Import required libraries
 from PIL import Image
 from pathlib import Path
