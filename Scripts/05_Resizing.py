@@ -1,7 +1,9 @@
+# Import required libraries
 from PIL import Image
 from pathlib import Path
 import pandas as pd
 
+# Define data and image directories
 DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
 OUT_IMAGES = DATA_PATH / "BFree_Images_600"
 
@@ -16,6 +18,8 @@ for path in OUT_IMAGES.glob("*.jpg"):
 # Print every image in the folder with its size
 files = sorted(OUT_IMAGES.glob("*.jpg"))
 bad = 0
+
+# Check image dimensions and count incorrectly sized images
 for p in files:
     with Image.open(p) as img:
         w, h = img.size
@@ -23,4 +27,5 @@ for p in files:
     if (w, h) != (224, 224):
         bad += 1
 
+# Load final dataset metadata
 df = pd.read_csv(DATA_PATH / "BFree_viral_images_600.csv")
