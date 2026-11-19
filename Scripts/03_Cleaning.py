@@ -1,9 +1,12 @@
+# Import required libraries
 import pandas as pd
 from pathlib import Path
 
+# Define data and image directories
 DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
 IMAGES = DATA_PATH / "BFree_Images"
 
+# Initialize counters
 renamed = 0
 skipped = 0
 
@@ -31,6 +34,7 @@ for sub in ("REAL", "FAKE"):
     if folder.exists() and not any(folder.iterdir()):
         folder.rmdir()
 
+# Print renaming results
 print("Renamed:", renamed)
 print("Skipped:", skipped)
 
@@ -39,8 +43,13 @@ files = {p.name for p in IMAGES.glob("*.jpg")}
 print("Images in folder:", len(files))
 print("Still prefixed:", sum(f.startswith(("REAL_", "FAKE_")) for f in files))
 
+# Load cleaned metadata and convert labels to binary values
 df = pd.read_csv(DATA_PATH / "step1_clean.csv")
 df["label"] = df["label"].astype(str).str.upper().map({"REAL": 1, "FAKE": 0})
+
+# Identify CSV rows with corresponding image files
 matched = df[df["filename"].isin(files)]
+
+# Display matching image counts and label distribution
 print("CSV rows that match an image:", len(matched))
 print(matched["label"].value_counts())
