@@ -25,22 +25,29 @@ The analysis uses a balanced subset of 600 images (300 real and 300 AI-generated
 - matplotlib 3.11.2
 - Pillow 13.0.0
 - scikit-learn 1.9.1
-- Seaborn 
+- Seaborn 0.13.2
 ### Platforms used
 Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated terminal, running on Windows 11 and macOS 26.2. 
 
 ## Map of Documentation
 * DS Project Repository
   * Data: Original Data & Final Dataset used for analysis.
-    * README.md
-    * BFree_Original_Set:
-      * BFree_viral_images.csv:  csv containing labels and sources to the 1100 images in the oroginal dataset
+    * BFree_Original:
+      * BFree_viral_images.csv:  csv containing labels and sources to 1100 images in the oroginal dataset
       * DataRetrieval.md: instrucitons for obtaining original 1100 image data set from https://github.com/grip-unina/B-Free/blob/main/README.md
       * downolad.ipynb: file used in DataRetrieval.md to download original image folder. 
     * BFree_images_600.csv: csv corresponding to the preprocessed dataset obtained from BFree. 
-    * BFree_images_600: Folder containing the 600 selected images (300 real, 300 fake) from the BFree image dataset. This is the "image data subset." 
+    * BFree_images_600: Folder containing the 600 selected images (300 real, 300 fake) from the BFree image dataset. This is the "image data subset."
+    * README.md
   * Output:
+    * README.md
   * Scripts:
+    * script1.py:
+    * script2.py:
+    * script3.py:
+    * script4.py:
+    * script5.py:
+    * script6.py:
   * LICENSE
   * README.md
   * REFERENCES
@@ -56,6 +63,6 @@ Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated termina
   - matplotlib 3.11.2
   - Pillow 13.0.0
   - scikit-learn 1.9.1
-  - Seaborn 
+  - Seaborn 0.13.2
 ### Reproduce Final Results
 The preprocessed BFree dataset and csv required for modeling is provided in the Data folder. Users do not need to download or preprocess the original BFree dataset to reproduce the final modeling results.
