@@ -58,3 +58,4 @@ Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated termina
   - scikit-learn 1.9.1
   - Seaborn 
 ### Reproduce Final Results
+The preprocessed BFree dataset and csv required for modeling is provided in the Data folder. Users do not need to download or preprocess the original BFree dataset to reproduce the final modeling results.
