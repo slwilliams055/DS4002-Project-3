@@ -5,8 +5,7 @@ import pandas as pd
 from pathlib import Path
 
 # Define data directory and CSV file
-DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
-CSV = DATA_PATH / "BFree_viral_images_600.csv"
+CSV = Data / "BFree_viral_images_600.csv"
 
 # Load dataset metadata
 df = pd.read_csv(CSV)
