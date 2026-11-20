@@ -6,8 +6,7 @@ from pathlib import Path
 import pandas as pd
 
 # Define data and image directories
-DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
-OUT_IMAGES = DATA_PATH / "BFree_Images_600"
+OUT_IMAGES = Data / "BFree_Images_600"
 
 # Resize every image (skips ones already 224x224)
 for path in OUT_IMAGES.glob("*.jpg"):
