@@ -26,10 +26,8 @@ import matplotlib.pyplot as plt
 
 
 # Load the CSV and images folder
-DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
-
-CSV_FILE = DATA_PATH / "BFree_viral_images_600.csv"
-IMAGE_DIR = DATA_PATH / "BFree_images_600"
+CSV_FILE = Data / "BFree_viral_images_600.csv"
+IMAGE_DIR = Data / "BFree_images_600"
 
 df = pd.read_csv(CSV_FILE)
 
