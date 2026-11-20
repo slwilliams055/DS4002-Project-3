@@ -6,9 +6,8 @@ import pandas as pd
 from pathlib import Path
 
 # Define input and output directories
-DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
-IMAGES = DATA_PATH / "BFree_Images"
-OUT_IMAGES = DATA_PATH / "BFree_Images_600"
+IMAGES = Data / "BFree_Images"
+OUT_IMAGES = Data / "BFree_Images_600"
 
 # Set target dataset size
 TOTAL = 600
