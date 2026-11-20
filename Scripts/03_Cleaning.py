@@ -5,8 +5,8 @@ import pandas as pd
 from pathlib import Path
 
 # Define data and image directories
-DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
-IMAGES = DATA_PATH / "BFree_Images"
+
+IMAGES = Data / "BFree_Images"
 
 # Initialize counters
 renamed = 0
