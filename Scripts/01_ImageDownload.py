@@ -9,10 +9,9 @@ from pathlib import Path
 import time
 
 # Set file paths
-DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
 
-INPUT_FILE = DATA_PATH / "BFree_viral_images.csv"
-OUTPUT_FOLDER = DATA_PATH / "BFree_Images"
+INPUT_FILE = Data / "BFree_viral_images.csv"
+OUTPUT_FOLDER = Data / "BFree_Images"
 
 # Load dataset
 df = pd.read_csv(INPUT_FILE)
