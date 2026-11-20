@@ -4,8 +4,8 @@ import pandas as pd
 from pathlib import Path
 
 # Define data and image directories
-DATA_PATH = Path(r"C:\Users\bryso\PycharmProjects\PythonProject\Stat 2120\Raw Data")
-IMAGES = DATA_PATH / "BFree_Images"
+
+IMAGES = Data / "BFree_Images"
 
 # List images to remove
 BAD_FILES = ["image_00229.jpg", "image_00297.jpg", "image_00369.jpg",
