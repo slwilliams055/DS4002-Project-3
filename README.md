@@ -9,7 +9,7 @@ This repository includes:
 - Model outputs, including training and validation performance visualizations, classification accuracy metrics, confusion matrices, and summary results. 
 - References and project documentation needed to understand and reproduce the analysis
 
-The analysis uses a balanced subset of 600 images (300 real and 300 AI-generated) from the B-free dataset [2] to develop a ResNet50 convolutional neural network using transfer learning. The dataset is divided into training, validation, and testing sets, with images grouped by source to prevent data leakage. The model is trained to distinguish real photographs from AI-generated images and evaluated on unseen test data using precision, recall, F1-score, and a confusion matrix. Model performance is also compared against a majority-class baseline, with training and validation results examined to assess potential overfitting. 
+The analysis uses a balanced subset of 600 images (290 real and 310 AI-generated) from the B-free dataset [2] to develop a ResNet50 convolutional neural network using transfer learning. The dataset is divided into training, validation, and testing sets, with images grouped by source to prevent data leakage. The model is trained to distinguish real photographs from AI-generated images and evaluated on unseen test data using precision, recall, F1-score, and a confusion matrix. Model performance is also compared against a majority-class baseline, with training and validation results examined to assess potential overfitting. 
 
 ## Software and Platform Selection
 ### Software Types Used
