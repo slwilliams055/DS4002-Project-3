@@ -1,6 +1,6 @@
 # DS-Project-3
 ## Contents
-This repository contains the code, data, documentation, and results for our analysis and forecasting of seasonal influenza activity in Virginia. The project uses ResNet50 convolutional neural network with TensorFlow and Keras to classify images as either real or AI-generated. This project uses a subset of the B-free images dataset, which contains authentic and AI-generated images that have circulated online, as well as a csv containing the corresponding image identities and sources.
+This project uses ResNet50 convolutional neural network with TensorFlow and Keras to classify images as either real or AI-generated. This project uses a subset of the B-free images dataset, which contains authentic and AI-generated images that have circulated online, as well as a csv containing the corresponding image identities and sources.
 
 This repository includes: 
 - The original and preprocessed B-free data subset.
