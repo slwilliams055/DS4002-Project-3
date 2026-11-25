@@ -1,5 +1,6 @@
-#Import the libraries we need
+#This script creates a ResNet50 model to classify images as either real or AI generated
 
+#Import the libraries we need
 import pandas as pd
 import numpy as np
 from pathlib import Path
