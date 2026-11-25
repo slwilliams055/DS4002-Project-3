@@ -24,10 +24,13 @@ from sklearn.metrics import (
 
 import matplotlib.pyplot as plt
 
-
 # Load the CSV and images folder
-CSV_FILE = Data / "BFree_viral_images_600.csv"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+Data = PROJECT_ROOT / "Data"
+
+CSV_FILE = Data / "BFree_images_600.csv"
 IMAGE_DIR = Data / "BFree_images_600"
+
 
 df = pd.read_csv(CSV_FILE)
 
