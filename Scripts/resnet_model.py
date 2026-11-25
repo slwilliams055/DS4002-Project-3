@@ -32,6 +32,8 @@ Data = PROJECT_ROOT / "Data"
 CSV_FILE = Data / "BFree_images_600.csv"
 IMAGE_DIR = Data / "BFree_images_600"
 
+OUTPUT_DIR = PROJECT_ROOT / "Output"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 df = pd.read_csv(CSV_FILE)
 
