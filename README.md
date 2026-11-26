@@ -70,13 +70,13 @@ The preprocessed BFree dataset and csv required for modeling is provided in the 
 2. Confirm that BFree_images_600.csv and the BFree_images_600 image folder are located in the Data folder.
 3. Install the required Python packages run the final modeling script from the Scripts/resnet_model.py
 4. The modeling script will:
- - Load the processed dataset containing 600 images (290 REAL and 310 FAKE).
- - Check the image files and preprocess them to 224 × 224 pixels.
- - Divide the images into training, validation, and testing sets based on their source identifiers to reduce data leakage.
- - Train a ResNet50 convolutional neural network using pretrained ImageNet weights.
- - Evaluate model performance using accuracy, precision, recall, F1-score, and a confusion matrix.
- - Compare the model's test accuracy against a majority-class baseline.
- - Generate training and validation accuracy and loss graphs.
+    - Load the processed dataset containing 600 images (290 REAL and 310 FAKE).
+    - Check the image files and preprocess them to 224 × 224 pixels.
+    - Divide the images into training, validation, and testing sets based on their source identifiers to reduce data leakage.
+    - Train a ResNet50 convolutional neural network using pretrained ImageNet weights.
+    - Evaluate model performance using accuracy, precision, recall, F1-score, and a confusion matrix.
+    - Compare the model's test accuracy against a majority-class baseline.
+    - Generate training and validation accuracy and loss graphs.
 5. Check that results are saved into the Output folder.
 ### Expected Results
 
