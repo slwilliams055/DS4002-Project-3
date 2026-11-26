@@ -64,5 +64,20 @@ Visual Studio Code (VS Code) with Python 3.13 and the VS Code integrated termina
   - Pillow 13.0.0
   - scikit-learn 1.9.1
   - Seaborn 0.13.2
-### Reproduce Final Results
-The preprocessed BFree dataset and csv required for modeling is provided in the Data folder. Users do not need to download or preprocess the original BFree dataset to reproduce the final modeling results.
+### Reproduce Final Analysis
+The preprocessed BFree dataset and csv required for modeling is provided in the Data folder. Users do not need to download or preprocess the original BFree dataset to reproduce the final modeling results. 
+1. Clone or download this GitHub repository and open the project folder in Visual Studio Code or PyCharm.
+2. Confirm that BFree_images_600.csv and the BFree_images_600 image folder are located in the Data folder.
+3. Install the required Python packages run the final modeling script from the Scripts/resnet_model.py
+4. The modeling script will:
+ - Load the processed dataset containing 600 images (290 REAL and 310 FAKE).
+ - Check the image files and preprocess them to 224 × 224 pixels.
+ - Divide the images into training, validation, and testing sets based on their source identifiers to reduce data leakage.
+ - Train a ResNet50 convolutional neural network using pretrained ImageNet weights.
+ - Evaluate model performance using accuracy, precision, recall, F1-score, and a confusion matrix.
+ - Compare the model's test accuracy against a majority-class baseline.
+ - Generate training and validation accuracy and loss graphs.
+5. Check that results are saved into the Output folder.
+### Expected Results
+
+In the original recorded run, the model achieved a test accuracy of 97.81%, compared with a majority-class baseline accuracy of 51.82%. The model achieved a precision of 1.0000, recall of 0.9545, and F1-score of 0.9767 for REAL images. However, when the model was run again, the accuracy was only 63% so model performance can vary in different runs, and identical or consistent results are not guaranteed.
