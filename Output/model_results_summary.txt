@@ -1,0 +1,57 @@
+DEEPFAKE DETECTION - RESNET50 MODEL
+===================================
+
+DATASET
+Total valid images: 600 | Sources: 31 | REAL: 290 | FAKE: 310
+Training: 343 images, 18 sources (166 REAL, 177 FAKE)
+Validation: 120 images, 6 sources (58 REAL, 62 FAKE)
+Testing: 137 images, 7 sources (66 REAL, 71 FAKE)
+Input size: 224 x 224 x 3
+
+MODEL ARCHITECTURE
+Frozen ResNet50 + GlobalAveragePooling2D + Dense(1)
+Total parameters: 23,589,761
+Trainable parameters: 2,049 | Frozen parameters: 23,587,712
+Epochs: 20
+
+FINAL EPOCH (20)
+Training accuracy: 99.71% | Training loss: 0.0827
+Validation accuracy: 50.83% | Validation loss: 0.6785
+
+FINAL TEST RESULTS
+Test accuracy: 97.81% (134 / 137 correct)
+Test loss: 0.2258
+REAL precision: 1.0000 | REAL recall: 0.9545 | REAL F1: 0.9767
+
+CLASSIFICATION REPORT (ROUNDED)
+Class     Precision   Recall    F1      Support
+FAKE      0.96        1.00      0.98       71
+REAL      1.00        0.95      0.98       66
+
+CONFUSION MATRIX
+                    Predicted FAKE   Predicted REAL
+Actual FAKE             71                 0
+Actual REAL              3                63
+
+BASELINE COMPARISON
+Majority-class baseline (always predicts FAKE): 51.82% (71/137)
+ResNet50 test accuracy: 97.81% (134/137)
+Improvement: 45.99 percentage points
+
+INTERPRETATION
+All 71 FAKE test images were labeled FAKE. Of 66 REAL images, 63
+were labeled REAL and three incorrectly labeled FAKE. Precision
+for REAL predictions was 100% on the observed test sample.
+
+IMPORTANT VALIDATION WARNING
+Validation accuracy reached only 50.83% despite 99.71% training
+and 97.81% testing accuracy. This large discrepancy requires
+investigation before making strong generalization claims.
+Possible reasons include source/split differences, inconsistent
+preprocessing, label errors, or evaluation pipeline issues; none
+of these is established from the supplied output. Verify data
+splits, source overlap, image duplicates, preprocessing, and
+per-source evaluation. The test set contains only 137 images.
+
+These files reproduce the user-supplied training logs and metrics;
+no model was rerun.
